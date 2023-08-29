@@ -1,4 +1,4 @@
-name: "CI for Testing"
+name: "CI for Testing workflow_dispatch"
 
 on: workflow_dispatch
 
