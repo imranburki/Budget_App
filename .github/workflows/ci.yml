@@ -1,6 +1,6 @@
-name: "CI for Testing workflow_dispatch"
+name: "CI for Testing workflow_dipatch and push"
 
-on: workflow_dispatch
+on: [push,workflow_dispatch]
 
 jobs:
     GitHub-Actions:
@@ -11,6 +11,6 @@ jobs:
             - name: Check Out
               uses: actions/checkout@v3
             - name: print message
-              run: echo Hi! the Ci sussessful... 
+              run: echo Hi! the Ci sussessful on push and workdlow dispatch... 
 
 
