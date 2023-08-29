@@ -1,6 +1,6 @@
 name: "CI for Testing"
 
-on: push
+on: workflow_dispatch
 
 jobs:
     GitHub-Actions:
