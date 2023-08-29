@@ -1,0 +1,16 @@
+name: "CI for Testing"
+
+on: push
+
+jobs:
+    GitHub-Actions:
+        runs-on: ubuntu-latest
+        
+        steps:
+            # step1. checkout code from repository
+            - name: Check Out
+              uses: actions/checkout@v3
+            - name: print message
+              run: echo Hi! the Ci sussessful... 
+
+

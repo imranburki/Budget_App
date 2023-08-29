@@ -15,6 +15,10 @@ var exp=[]
 var budget=0
 var totalexp=0
 var balance=0
+
+app.get('/test',(req,res)=>{
+    res.status(200).send("User Page");
+})
 app.get('/',(req,res)=>{
     //const exp=[]
     
@@ -75,6 +79,6 @@ app.get('/expanse/delete/:id',(req,res)=>{
  balance=budget-totalexp
     res.render('index',{exp,budget,totalexp,balance})
 })
-app.listen(3000,()=>{
+app.listen(8001,()=>{
     console.log('app is listening')
 })
