@@ -11,6 +11,13 @@ jobs:
             - name: Check Out
               uses: actions/checkout@v3
             - name: print message
-              run: echo Hi! the Ci sussessful on push and workdlow dispatch... 
+              run: echo Hi! the Ci sussessful on push and workdlow dispatch...
+            # step 2 for setting up NodeJs Enviroment
+            - name: setting NodeJs dependices
+              uses: actions/setup-node@v3
+              with:
+                version: '>=6.0.0'
+                
+
 
 
