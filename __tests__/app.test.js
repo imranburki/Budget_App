@@ -5,8 +5,8 @@ const app = require('../index'); // Replace with the actual path to your app.js
 test('1 + 1 = 2',()=>{
     expect(1 + 1).toBe(2);
 })
-test('1+3=45',()=>{
-  expect(1+3).toBe(4)
+test('1 + 3 = 45',()=>{
+  expect(1 + 3).toBe(44)
 })
 // describe('POST /test', () => {
 //   test('should return status 200', async () => {
