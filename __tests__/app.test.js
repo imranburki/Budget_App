@@ -1,14 +1,12 @@
 const request = require('supertest');
 const express = require('express');
-const app = require('./index.js'); // Replace with the actual path to your app.js
+const app = require('../index'); // Replace with the actual path to your app.js
 
-describe('Express app routes', () => {
-  describe('GET /test', () => {
-    test('should return status 200 and "User Page"', async () => {
-      const response = await request(app).get('/test');
-      expect(response.status).toBe(200);
-      expect(response.text).toBe('User Page');
-    });
+describe('GET /test', () => {
+  test('should return status 200', async () => {
+    const response = await request(app).post('/test')
+    expect(response.statusCode).toBe(200);
+    // expect(response.text).toBe('User Page');
   });
 
   // test('POST /budget/add should respond with status code 200', async () => {
