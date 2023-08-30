@@ -7,17 +7,22 @@ jobs:
         runs-on: ubuntu-latest
         
         steps:
-            # step1. checkout code from repository
+            
+          # step1. checkout code from repository
             - name: Check Out
               uses: actions/checkout@v3
             - name: print message
               run: echo Hi! the Ci sussessful on push and workdlow dispatch...
-            # step 2 for setting up NodeJs Enviroment
+            
+              # step 2 for setting up NodeJs Enviroment
             - name: setting NodeJs dependices
               uses: actions/setup-node@v3
               with:
                 version: '>=6.0.0'
-                
+            # step 3  installing dependencies
+            - name: installing dependencies
+              run: npm install
+                  
 
 
 
