@@ -25,6 +25,6 @@ jobs:
             
             # setp 4 run test-cases
             - name: Run test-cases
-              run: npx run jest
+              run: npx jest
 
 
