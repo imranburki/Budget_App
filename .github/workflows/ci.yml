@@ -22,7 +22,9 @@ jobs:
             # step 3  installing dependencies
             - name: installing dependencies
               run: npm install
-                  
-
+            
+            # setp 4 run test-cases
+            - name: Run test-cases
+              run: npm run test
 
 
