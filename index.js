@@ -16,8 +16,8 @@ var budget=0
 var totalexp=0
 var balance=0
 
-app.post('/test',(req,res)=>{
-    res.sendStatus(200);
+app.post("/test",(req,res)=>{
+    res.send('hello');
 })
 app.get('/',(req,res)=>{
     //const exp=[]
@@ -79,6 +79,9 @@ app.get('/expanse/delete/:id',(req,res)=>{
  balance=budget-totalexp
     res.render('index',{exp,budget,totalexp,balance})
 })
-app.listen(8000,()=>{
+const server=app.listen(8000,()=>{
     console.log('app is listening')
 })
+afterAll((done) => {
+    server.close(done);
+  });
